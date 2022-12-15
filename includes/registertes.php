@@ -4,8 +4,8 @@ require_once'../koneksi.php';
 $nama = $_POST['nama'];
 $email = $_POST['email'];
 $username = $_POST['username'];
-$pass = md5($_POST['password']);
-$cpass = md5($_POST['cpassword']);
+$pass = $_POST['password'];
+$cpass = $_POST['cpassword'];
 
 $sql = "INSERT INTO memberacc (fullname, email, username, password, cpassword) VALUES ('$nama', '$email', '$username', '$pass', '$cpass')";
 
